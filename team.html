@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IST363 Project 3</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-[#0d0f14] font-['Barlow',sans-serif] text-[#f0f2f7]">
+
+        <!-- Header -->
+        <header class="flex justify-between items-center border-b border-[rgba(255,255,255,0.07)] px-[40px] py-[10px]">
+            <h1 class="text-[#f0f2f7] text-[1.6rem]">Title</h1>
+            <nav>
+                <a href="index.html" class="text-[#6b7280] mx-[5px] py-[10px] px-[15px] rounded-[5px]">Home</a>
+                <a href="leagues.html" class="text-[#6b7280] mx-[5px] py-[10px] px-[15px] rounded-[5px]">Leagues</a>
+                <a href="my-teams.html" class="text-[#6b7280] mx-[5px] py-[10px] px-[15px] rounded-[5px]">My Teams</a>
+            </nav>
+        </header>
+
+        <main class="py-[30px] px-[40px]">
+            <div class="bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] px-[24px] py-[15px] flex items-center justify-between mb-[20px]">
+                <div class="flex items-center gap-[20px]">
+                    <img src="images/atlanta-braves-logo.png" class="w-[64px] h-[64px] object-contain">
+                    <div>
+                        <h2 class="text-[#f0f2f7] text-[1.6rem]">Team Name</h2>
+                        <p class="text-[#6b7280] text-[18px]">League</p>
+                    </div>
+                </div>
+                <button class="flex items-center gap-[8px] border border-[rgba(255,255,255,0.07)] text-[#6b7280] px-[16px] py-[8px] rounded-[8px]">
+                    <span class="text-[18px]">☆</span>
+                    <span>Favorite</span>
+                </button>
+            </div>
+            <div class="flex gap-[16px] mb-[20px]">
+                <div class="flex-1 bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] px-[20px] py-[16px] text-center">
+                    <p class="text-[25px] font-bold text-[#f0f2f7]">0-0</p>
+                    <p class="text-[#6b7280] uppercase mt-[4px]">Record</p>
+                </div>
+                <div class="flex-1 bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] px-[20px] py-[16px] text-center">
+                    <p class="text-[25px] font-bold text-[#f0f2f7]">1st</p>
+                    <p class="text-[#6b7280] uppercase mt-[4px]">Division</p>
+                </div>
+                <div class="flex-1 bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] px-[20px] py-[16px] text-center">
+                    <p class="text-[25px] font-bold text-[#f0f2f7]">Year</p>
+                    <p class="text-[#6b7280] uppercase mt-[4px]">Founded</p>
+                </div>
+            </div>
+            <div class="flex gap-[20px] items-start">
+                <div class="w-[50%] bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] overflow-hidden">
+                    <div class="px-[20px] py-[14px] border-b border-[rgba(255,255,255,0.07)]">
+                        <h3 class="text-[#f0f2f7]">Recent Results</h3>
+                    </div>
+                    <div>
+                        <div class="flex items-center px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="font-bold text-[#22c55e] w-[20px]">W</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">vs Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                        <div class="flex items-center px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="font-bold text-[#ef4444] w-[20px]">L</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">@ Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                        <div class="flex items-center px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="font-bold text-[#22c55e] w-[20px]">W</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">vs Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                        <div class="flex items-center px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="font-bold text-[#ef4444] w-[20px]">L</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">@ Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                        <div class="flex items-center px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="font-bold text-[#22c55e] w-[20px]">W</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">vs Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                        <div class="flex items-center px-[20px] py-[12px] schedule-row">
+                            <span class="font-bold text-[#ef4444] w-[20px]">L</span>
+                            <span class="text-[#f0f2f7] flex-1 ml-[20px]">@ Team</span>
+                            <span class="text-[#6b7280]">Score</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[50%] bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px] overflow-hidden">
+                    <div class="px-[20px] py-[14px] border-b border-[rgba(255,255,255,0.07)]">
+                        <h3 class="text-[#f0f2f7]">Upcoming Schedule</h3>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">vs Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">@ Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">vs Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">@ Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">vs Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                        <div class="flex items-center justify-between px-[20px] py-[12px] schedule-row">
+                            <span class="text-[#f0f2f7]">@ Team</span>
+                            <span class="text-[#6b7280]">Date Time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>

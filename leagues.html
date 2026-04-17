@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>IST363 Project 3</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body class="bg-[#0d0f14] font-['Barlow',sans-serif] text-[#f0f2f7]">
+
+        <!-- Header -->
+        <header class="flex justify-between items-center border-b border-[rgba(255,255,255,0.07)] px-[40px] py-[10px]">
+            <h1 class="text-[#f0f2f7] text-[1.6rem]">Title</h1>
+            <nav>
+                <a href="index.html" class="text-[#6b7280] mx-[5px] py-[10px] px-[15px] rounded-[5px]">Home</a>
+                <a href="leagues.html" class="text-[#3b82f6] bg-[rgba(59,130,246,0.12)] mx-[5px] py-[10px] px-[15px] rounded-[5px]">Leagues</a>
+                <a href="my-teams.html" class="text-[#6b7280] mx-[5px] py-[10px] px-[15px] rounded-[5px]">My Teams</a>
+            </nav>
+        </header>
+
+        <main class="py-[30px] px-[40px]">
+            <div class="flex gap-[12px] mb-[28px]">
+                <span class="border border-[rgba(255,255,255,0.07)] text-[#3b82f6] bg-[rgba(59,130,246,0.12)] px-[16px] py-[6px] rounded-[5px] cursor-pointer league-selector">NFL</span>
+                <span class="px-[16px] py-[6px] rounded-[5px] border border-[rgba(255,255,255,0.07)] text-[#f0f2f7] bg-[#151820] cursor-pointer league-selector">NBA</span>
+                <span class="px-[16px] py-[6px] rounded-[5px] border border-[rgba(255,255,255,0.07)] text-[#f0f2f7] bg-[#151820] cursor-pointer league-selector">MLB</span>
+                <span class="px-[16px] py-[6px] rounded-[5px] border border-[rgba(255,255,255,0.07)] text-[#f0f2f7] bg-[#151820] cursor-pointer league-selector">NHL</span>
+                <span class="px-[16px] py-[6px] rounded-[5px] border border-[rgba(255,255,255,0.07)] text-[#f0f2f7] bg-[#151820] cursor-pointer league-selector">MLS</span>
+            </div>
+
+            <div class="flex gap-[25px] items-start">
+                <div class="w-[50%] bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px]">
+                    <div class="px-[20px] py-[14px] border-b border-[rgba(255,255,255,0.07)]">
+                        <h3 class="text-[#f0f2f7] text-[18px]">League Standings</h3>
+                    </div>
+                    <table class="w-full">
+                        <thead>
+                            <tr>
+                                <th class="p-2 pl-5 text-left font-semibold tracking-widest uppercase text-[#3d4455] border-b border-[rgba(255,255,255,0.07)]">Team</th>
+                                <th class="p-2 text-center font-semibold tracking-widest uppercase text-[#3d4455] border-b border-[rgba(255,255,255,0.07)]">W</th>
+                                <th class="p-2 text-center font-semibold tracking-widest uppercase text-[#3d4455] border-b border-[rgba(255,255,255,0.07)]">L</th>
+                                <th class="p-2 pr-5 text-center font-semibold tracking-widest uppercase text-[#3d4455] border-b border-[rgba(255,255,255,0.07)]">Pct</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7] border-b border-[rgba(255,255,255,0.07)]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center border-b border-[rgba(255,255,255,0.07)]">.000</td>
+                            </tr>
+                            <tr class="standings-row">
+                                <td class="p-2 pl-5 text-[#f0f2f7]">Team Name</td>
+                                <td class="p-2 text-[#6b7280] text-center">0</td>
+                                <td class="p-2 text-[#6b7280] text-center">0</td>
+                                <td class="p-2 pr-5 text-[#6b7280] text-center">.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="w-[50%] bg-[#151820] border border-[rgba(255,255,255,0.07)] rounded-[10px]">
+                    <div class="px-[20px] py-[14px] border-b border-[rgba(255,255,255,0.07)]">
+                        <h3 class="text-[#f0f2f7] text-[18px]">Upcoming Schedule</h3>
+                    </div>
+                    <div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] border-b border-[rgba(255,255,255,0.07)] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center px-[20px] py-[13px] schedule-row">
+                            <span class="text-[#f0f2f7]">Team 1 vs Team 2</span>
+                            <div class="flex gap-[16px]">
+                                <span class="text-[#6b7280]">Date</span>
+                                <span class="text-[#6b7280]">Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </body>
+</html>
