@@ -26,22 +26,22 @@ export async function getStandings(leagueKey) {
 export async function searchTeams(query) {
     const results = []
     for (const key of Object.keys(LEAGUES)) {
-        const { sport, league } = LEAGUES[key]
         try {
-            const res = await fetch(`${ESPN_BASE}/${sport}/${league}/teams`)
-            const data = await res.json()
-            const teams = data.sports?.[0]?.leagues?.[0]?.teams || []
-            const matches = teams
-                .map(t => t.team)
-                .filter(t => t.displayName.toLowerCase().includes(query.toLowerCase()))
-                .map(t => ({
-                    id: t.id,
-                    name: t.displayName,
-                    abbreviation: t.abbreviation,
-                    logo: t.logos?.[0]?.href || '',
+            const standings = await getStandings(key)
+            const groups = standings.flatMap(group =>
+                group.children ? group.children : [group]
+            )
+            const entries = groups.flatMap(g => g.standings?.entries || [])
+            const matches = entries
+                .filter(e => e.team?.displayName?.toLowerCase().includes(query.toLowerCase()))
+                .map(e => ({
+                    id: e.team.id,
+                    name: e.team.displayName,
+                    abbreviation: e.team.abbreviation,
+                    logo: e.team.logos?.[0]?.href || '',
                     league: key,
-                    sport: sport,
-                    leagueSlug: league,
+                    sport: LEAGUES[key].sport,
+                    leagueSlug: LEAGUES[key].league,
                 }))
             results.push(...matches)
         } catch (e) {
